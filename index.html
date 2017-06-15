@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Insta Collage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/98a73d7745.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italianno|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="languaje">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <select class="selectpicker left" data-width="fit">       
+    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+  <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+</select>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="login-container">
+        <div class="container">
+            <div class="center-form panel">
+                <div class="panel-body">
+                    <h4 class="text-center logo"><i class="ion-log-in"></i> INSTAGRAM</h4>
+
+                    <form name="loginForm" ng-submit="emailLogin()" novalidate>
+                        <div class="form-group has-feedback">
+                            <input server-error class="form-control input-lg" type="text" name="email" placeholder="Email" required autofocus>
+                            <span class="ion-at form-control-feedback"></span>
+                            <div class="help-block">
+                                <div ng-message="required">Please enter your email</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback">
+                            <input server-error class="form-control input-lg" type="password" name="password" placeholder="Password" required>
+                            <span class="ion-key form-control-feedback"></span>
+                            <div class="help-block">
+                                <div ng-message="required">Please enter your password</div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-block btn-success"> Iniciar sesión</button>
+
+                        <br/>
+                        <p class="text-center text-muted">
+                            <small>¿Has olvidado tú información de inicio de sesión? Obtén ayuda. <a href="#/signup">AYUDA</a></small>
+                        </p>
+                        <div class="signup-or-separator">
+                            <hr>
+                        </div>
+                        <button class="btn btn-block btn-instagram" ">
+          <i class="fa fa-facebook-square " aria-hidden="true "></i> Sign in with Facebook
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        <p class="text-center text-muted ">
+            <small>Don't have an account yet? <a href="#/signup ">Sign up</a></small>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js ">
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script src="assets/js/main.js "></script>
+    </script>
+</body>
+
+</html>

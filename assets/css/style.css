@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    background-color: #6daf83;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/*languaje*/
+
+.login-container {
+    padding-bottom: 20px;
+}
+
+.container {
+    padding-top: 49PX;
+}
+
+.logo {
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+.left {
+    border: none;
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    background-color: #a28377;
+}
