@@ -2,8 +2,11 @@
     padding: 0;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
-    background-color: #6daf83;
     color: white;
+}
+
+body {
+    background: linear-gradient(#6daf83, #c07951)
 }
 
 .text-center {
@@ -27,8 +30,41 @@
     color: white;
 }
 
+
+/*NAVBAR*/
+
 .left {
     border: none;
+    background-color: transparent;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+
+/*INSTAGRAM*/
+
+.panel-body {
+    background-color: transparent;
+}
+
+.panel {
+    background-color: transparent;
+}
+
+.btn-block {
+    background-color: transparent;
+    border-color: white;
+}
+
+.input-lg {
+    background-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    color: white !important;
+    /*no deja cambiar el color del placeholder, por eso use important*/
 }
 
 
@@ -36,5 +72,18 @@
 
 footer {
     width: 100%;
-    background-color: #a28377;
+    background-color: transparent;
+    margin-bottom: 15%;
+}
+
+.bottom-footer {
+    margin-top: 21px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+    background-color: transparent;
+}
+
+footer h3 {
+    font-size: 14px;
+    text-align: center;
 }

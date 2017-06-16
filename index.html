@@ -13,29 +13,29 @@
 </head>
 
 <body>
-    <section class="languaje">
+    <nav class="languaje">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <select class="selectpicker left" data-width="fit">       
-    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-  <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                    <select class="selectpicker left" data-width="fit">
+    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>Idioma: Español (España) </option>
+  <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Inglés (Latinoamerica)</option>
 </select>
                 </div>
             </div>
         </div>
 
-    </section>
+    </nav>
 
     <section class="login-container">
-        <div class="container">
+        <div class="container transparent">
             <div class="center-form panel">
                 <div class="panel-body">
                     <h4 class="text-center logo"><i class="ion-log-in"></i> INSTAGRAM</h4>
 
                     <form name="loginForm" ng-submit="emailLogin()" novalidate>
                         <div class="form-group has-feedback">
-                            <input server-error class="form-control input-lg" type="text" name="email" placeholder="Email" required autofocus>
+                            <input id="name" class="form-control input-lg indicate" type="text" name="email" placeholder="Email" required autofocus>
                             <span class="ion-at form-control-feedback"></span>
                             <div class="help-block">
                                 <div ng-message="required">Please enter your email</div>
@@ -43,15 +43,14 @@
                         </div>
 
                         <div class="form-group has-feedback">
-                            <input server-error class="form-control input-lg" type="password" name="password" placeholder="Password" required>
+                            <input id="password" class="form-control input-lg" type="password" name="password" placeholder="Password" required>
                             <span class="ion-key form-control-feedback"></span>
                             <div class="help-block">
                                 <div ng-message="required">Please enter your password</div>
                             </div>
                         </div>
 
-                        <button type="submit" class="btn btn-block btn-success"> Iniciar sesión</button>
-
+                        <a href="photolog.html"><button type="button" class="btn btn-block btn-success" > Iniciar sesión</button></a>
                         <br/>
                         <p class="text-center text-muted">
                             <small>¿Has olvidado tú información de inicio de sesión? Obtén ayuda. <a href="#/signup">AYUDA</a></small>
@@ -71,9 +70,7 @@
 
     </section>
     <footer>
-        <p class="text-center text-muted ">
-            <small>Don't have an account yet? <a href="#/signup ">Sign up</a></small>
-        </p>
+        <h3 class="bottom-footer " >¿No tienes una cuenta? Registrate</h3>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js ">
     </script>
