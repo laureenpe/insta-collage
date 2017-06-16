@@ -13,7 +13,7 @@ function permitirDrop(ev) {
 function drop(ev) {
     ev.preventDefault();
     //tomamos el dato que hemos arrastrado
-    var id_foto = ev.dataTransfer.getData('text');
+    var foto = ev.dataTransfer.getData('text');
     //agregamos el elemento arrastrado al elemento en el que se produjo el evento ondrop.
-    ev.target.appendChild(document.getElementById(id_foto));
+    ev.target.appendChild(document.getElementById(foto));
 }

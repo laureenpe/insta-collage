@@ -32,26 +32,36 @@
 				<i class="fa fa-battery" aria-hidden="true"></i>
 			</div>			
 		</div>	
-	</section><!-- término seccion -->
-
+	</section>
+<section id="gallery" class="container draggable">
+		<div class="row">
+			<div class="col-sm-12 col-xs-12">
+				<div class="row">
+					<div class="col-sm-6 col-xs-6 caja" id="first" ondrop="drop(event)" ondragover="finalDrop(event)">
+							
+					</div>
+						<div class="col-sm-12 col-xs-12 caja" id="first-1" ondrop="drop(event)" ondragover="finalDrop(event)">							
+					</div>
+				</div>		
+			</div>			
+		</div>
+	</section>
     <section class="photolog ">
-        <div class="container " ondragover=" permitirDrop(event) " ondrop="drop(event)">
+        <div class="container" ondragover=" permitirDrop(event) " ondrop="drop(event)">
             <div id=" container-gallery">
                 <div class="row ">
                     <div class='list-group gallery'>
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
                             <a class="fancybox thumbnail " rel="ligthbox ">
-                                <img class="img-responsive " alt=" " src="img/coffe.jpg " />
+                                <img  id= class="img-responsive " alt=" "draggable="true" ondragstart="drag(event)" src="img/coffe.jpg " />
                             </a>
                         </div>
-                        <!-- col-6 / end -->
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
                             <a class="fancybox thumbnail " rel="ligthbox ">
-                                <img class="img-responsive " alt=" " src="img/viena.jpg " />
+                                <img id="viena" class="img-responsive " draggable="true" ondragstart="drag(event)" alt=" " src="img/viena.jpg " />
                             </a>
                         </div>
                     </div>
-                    <!-- list-group / end -->
                 </div>
                 <!-- row / end -->
             </div>
@@ -68,10 +78,7 @@
         </div>
     </section>
     <section class="gallery ">
-
-        <!-- Page Content -->
         <div class="container ">
-
             <div class="row ">
                 <div class="col-lg-3 col-md-4 col-xs-4 thumb ">
                     <a class="thumbnail " href="# ">
